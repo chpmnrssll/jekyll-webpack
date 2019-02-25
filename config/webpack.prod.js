@@ -10,7 +10,7 @@ module.exports = Merge(CommonConfig, {
   output: {
     filename: '[name]-[hash].bundle.js',
     path: path.resolve('assets'),
-    publicPath: '/assets/',
+    publicPath: '/jekyll-webpack/assets/',
   },
   plugins: [
     new CleanWebpackPlugin(['assets'], { root: path.resolve(__dirname, '..'), verbose: true }),
