@@ -3,29 +3,26 @@
 # This config file contains the config of your webpages
 # You may also want to update /config/webpack.pwa.js in case you want to generate a Progressive Web App
 
-title: Super-website
-email: your-email@example.com
-description: A super website made with love
+title: Jekyll-Webpack Boilerplate
+email: chpmnrssll@gmail.com
+description: An extremely optimized Jekyll-Webpack website
 
 # baseurl must match publicPath in webpack.prod.js
 baseurl: /jekyll-webpack # the subpath of your site, e.g. /blog
 url: https://chpmnrssll.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
-theme_color: '#c0ffee'
-twitter_username: sandochee
-github_username:  sandoche
-author: Sandoche Adittane
+theme_color: '#0d5173'
+twitter_username: chpmnrssll
+github_username:  chpmnrssll
+author: Russell Chapman
 logo: assets/images/large-logo.png
 twitter:
-  username: sandochee
+  username: chpmnrssll
 social:
-  name: Sandoche Adittane
+  name: Russell Chapman
   links:
-    - https://twitter.com/sandochee
-    - https://www.facebook.com/sandoche
-    - https://www.linkedin.com/in/sandoche
-    - https://plus.google.com/+SandocheADITTANE
-    - https://github.com/sandoche
+    - https://linkedin.com/in/russell-chapman-343013153/
+    - https://github.com/chpmnrssll
 
 languages: ["en"]
 ampdir: amp
