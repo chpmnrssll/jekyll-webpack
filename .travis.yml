@@ -1,5 +1,7 @@
 language: ruby
-cache: bundler
+cache:
+  - bundler
+  - npm
 rvm:
   - 2.5.1
 install:
