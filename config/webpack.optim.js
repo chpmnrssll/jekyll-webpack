@@ -4,6 +4,7 @@ const Critters = require('critters-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: './config/optimization-fix/do-not-delete.js',
   output: {
     filename: 'optimization-fix-this-file-is-ignored.js',
@@ -13,9 +14,6 @@ module.exports = {
     new Critters({
       // Outputs: <link rel="preload" onload="this.rel='stylesheet'">
       preload: 'swap',
-      // Don't inline critical font-face rules, but preload the font URLs:
-      preloadFonts: true,
-      pruneSource: false
     })
   ],
 };

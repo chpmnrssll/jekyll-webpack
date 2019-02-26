@@ -8,6 +8,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = Merge(CommonConfig, {
+  mode: 'production',
   output: {
     filename: '[name]-[hash].bundle.js',
     path: path.resolve('assets'),
