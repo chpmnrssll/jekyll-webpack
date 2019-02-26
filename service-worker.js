@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["404.html","3b9a63bddfd763a8b486eb3be3a29157"],["about/index.html","d5a1f51814c2b1c1e34c3835c4423f16"],["amp/jekyll/boilerplate/2017/08/08/Jekyll-webpack-boilerplate-release.html","c193f1c9f373fb8e3e57b9e0196dd5a3"],["amp/jekyll/documentation/2017/08/07/Write-your-articles-with-kramdown.html","37fccfbd706893f54ec4594ec74f5641"],["assets/app-eb4f4feaf1179183941a.bundle.js","0eb030a7a31b5ba379aea860531ab998"],["assets/app.css","99310fbff00fd66953077ad90e662e41"],["assets/images/icon.png","821755cf559e33eed90a34b74a55cd99"],["assets/images/large-logo.png","821755cf559e33eed90a34b74a55cd99"],["blog/index.html","7b1e68eaae46deb77042f97589114523"],["dist/index.html","cb3689152fe21419866d4012c5b06d7e"],["index.html","0702880e1318379737e91184ddf87f09"],["jekyll/boilerplate/2017/08/08/Jekyll-webpack-boilerplate-release.html","32cc5d1ac5c17121e0dfbf7720a7a906"],["jekyll/documentation/2017/08/07/Write-your-articles-with-kramdown.html","dbecd6188b96ccebae8be820055281fb"]];
+var precacheConfig = [["404.html","63a8e6a653bd66bb31c5067f7610c6ee"],["about/index.html","3955647de5f49693b39d691d1f0ac8a5"],["amp/jekyll/boilerplate/2017/08/08/Jekyll-webpack-boilerplate-release.html","c193f1c9f373fb8e3e57b9e0196dd5a3"],["amp/jekyll/documentation/2017/08/07/Write-your-articles-with-kramdown.html","37fccfbd706893f54ec4594ec74f5641"],["assets/app-0e513187993bb574308d.bundle.js","0eb030a7a31b5ba379aea860531ab998"],["assets/app.css","99310fbff00fd66953077ad90e662e41"],["assets/images/icon.png","821755cf559e33eed90a34b74a55cd99"],["assets/images/large-logo.png","821755cf559e33eed90a34b74a55cd99"],["blog/index.html","067f4ffec27f69d86e9a87ee46ae0e2a"],["dist/index.html","cb3689152fe21419866d4012c5b06d7e"],["index.html","67e9e6a31917cead2cfeaeab7888ac95"],["jekyll/boilerplate/2017/08/08/Jekyll-webpack-boilerplate-release.html","ecfbd53165761c861ce15f8aeb9cb57f"],["jekyll/documentation/2017/08/07/Write-your-articles-with-kramdown.html","d14ce88ecee46db3840ae695f3c7ebf8"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -45,7 +45,7 @@ var ignoreUrlParametersMatching = [/^utm_/];
 
 
 
-var addDirectoryIndex = function(originalUrl, index) {
+var addDirectoryIndex = function (originalUrl, index) {
     var url = new URL(originalUrl);
     if (url.pathname.slice(-1) === '/') {
       url.pathname += index;
@@ -53,7 +53,7 @@ var addDirectoryIndex = function(originalUrl, index) {
     return url.toString();
   };
 
-var cleanResponse = function(originalResponse) {
+var cleanResponse = function (originalResponse) {
     // If this is not a redirected response, then we don't have to do anything.
     if (!originalResponse.redirected) {
       return Promise.resolve(originalResponse);
@@ -75,7 +75,7 @@ var cleanResponse = function(originalResponse) {
     });
   };
 
-var createCacheKey = function(originalUrl, paramName, paramValue,
+var createCacheKey = function (originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
     var url = new URL(originalUrl);
@@ -91,7 +91,7 @@ var createCacheKey = function(originalUrl, paramName, paramValue,
     return url.toString();
   };
 
-var isPathWhitelisted = function(whitelist, absoluteUrlString) {
+var isPathWhitelisted = function (whitelist, absoluteUrlString) {
     // If the whitelist is empty, then consider all URLs to be whitelisted.
     if (whitelist.length === 0) {
       return true;
@@ -104,7 +104,7 @@ var isPathWhitelisted = function(whitelist, absoluteUrlString) {
     });
   };
 
-var stripIgnoredUrlParameters = function(originalUrl,
+var stripIgnoredUrlParameters = function (originalUrl,
     ignoreUrlParametersMatching) {
     var url = new URL(originalUrl);
     // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
