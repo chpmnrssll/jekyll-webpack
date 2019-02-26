@@ -3,6 +3,8 @@ cache: bundler
 rvm:
   - 2.5.1
 install:
+  - gem install bundler
+  - npm i npm@latest -g
   - bundle install
   - npm install
 script: npm run build:pwa:optim
